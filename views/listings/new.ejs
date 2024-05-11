@@ -1,0 +1,54 @@
+<% layout('/layouts/boilerplate') -%>
+
+    <body>
+        <h1>create new listing</h1>
+        <form action="/listings" method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" placeholder="Enter your title" name="listing[title]" id=""
+                    required>
+                <div class="valid-feedback">title Looks good!</div>
+                <div class="invalid-feedback">Title cannot be empty!</div>
+            </div>
+           
+            <div class="mb-3">
+                <label for="description" class="form-label">Enter a catchy description</label>
+                <textarea name="listing[description]" class="form-control" cols="10" rows="5"
+                    placeholder="Enter description " required></textarea>
+                    <div class="invalid-feedback">Please enter description!</div>
+            </div>
+
+            <!-- <div class="mb-3">
+                <label for="image" class="form-label">Enter url/image</label>
+                <input type="text" placeholder="Enter image url" class="form-control" name="listing[image]">
+            </div> -->
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload image</label>
+                <input type="file" class="form-control" name="listing[image]">
+            </div>
+
+            <div class="mb-3">
+                <label for="price" class="form-label">Enter price</label>
+                <input type="text" placeholder="Enter price " class="form-control" name="listing[price]" id=""
+                    required>
+                    <div class="invalid-feedback">price is required!</div>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Enter location</label>
+                <input type="text" placeholder="Enter Location" class="form-control" name="listing[location]" id=""
+                    required>
+                    <div class="invalid-feedback">please enter the location</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="country" class="form-label">Enter your country name</label>
+                <input type="text" placeholder="Enter your Country" class="form-control" name="listing[country]" id=""
+                    required>
+                    <div class="invalid-feedback">Country name cannot be empty!</div>
+            </div>
+            <button class="p-2 rounded bg-primary-subtle border-0 text-uppercase mt-4">add listing</button>
+        </form>
+       
+    </body>

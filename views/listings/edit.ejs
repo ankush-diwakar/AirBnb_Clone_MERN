@@ -1,0 +1,59 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+        <div class="container">
+
+<h1>Edit your posting details here :)</h1>
+
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation" novalidate enctype="multipart/form-data"> 
+
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text"  class="form-control" value="<%=listing.title%>" name="listing[title]" id="" required> 
+            <div class="valid-feedback">title Looks good!</div>
+            <div class="invalid-feedback">Title cannot be empty!</div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea type="text"  class="form-control" name="listing[description]"  cols="30" rows="5" required ><%=listing.description%></textarea>
+            
+        </div>
+    
+        <div class="mb-3">
+            <% if(ogurl !== listing.image.url){%>
+                <img src="<%= ogurl %>" alt="noimage">
+            <%}%>
+            <img src="<%= ogurl %>" style="width: 300px; height: 200px;" alt="noimage">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload new image</label>
+            <input type="file" class="form-control" name="listing[image]">
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" required value="<%=listing.price%>"   name="listing[price]" id=""> 
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" required value="<%=listing.location%>"   name="listing[location]" id=""> 
+        </div>
+        <div class="mb-3">
+            <label for="country" class="form-label">Country name</label>
+            <input type="text" class="form-control" required value="<%=listing.country%>"   name="listing[country]" id=""> 
+        </div>
+        <input type="submit" class="btn btn-danger text-uppercase" value="edit">
+    </form>
+</body>
+        </div>
+        
+</body>
+
+
+
+
+
+
+
+
+
+
+
