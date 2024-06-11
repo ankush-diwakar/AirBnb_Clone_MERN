@@ -35,6 +35,29 @@
                     required>
                     <div class="invalid-feedback">price is required!</div>
             </div>
+
+            <div class="mb-3">
+
+                <label for="category" class="form-label">Choose category</label>
+                <select class="form-control" name="listing[category]">
+                    <option value="trending">Trending</option>
+                    <option value="artic">Artic</option>
+                    <option value="rooms">Rooms</option>
+                    <option value="iconic-cities">iconic-cities</option>
+                    <option value="castles">Castles</option>
+                    <option value="pools">Pools</option>
+                    <option value="camping">Camping</option>
+                    <option value="farms">Farms</option>
+                    <option value="rainy">Rainy</option>
+                    <option value="tracking">Tracking</option>
+                    <option value="bycycles">Bycycles</option>
+                    <option value="trains">Trains</option>
+                </select>
+                    <div class="invalid-feedback">category is required!</div>
+
+            </div>
+
+
             <div class="mb-3">
                 <label for="location" class="form-label">Enter location</label>
                 <input type="text" placeholder="Enter Location" class="form-control" name="listing[location]" id=""

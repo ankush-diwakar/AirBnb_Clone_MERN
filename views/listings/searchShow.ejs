@@ -60,6 +60,23 @@
             width: 30px;
             height: 18px;
         }
+
+        #err {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #err img {
+            width: 20vw;
+            margin-left: 65vw;
+            padding: -80px;
+        }
+
+        #errp{
+            font-size: 2vh;
+        }
     </style>
 
     <body>
@@ -126,58 +143,46 @@
         <!-- <form action="/listings/new" method="GET">
             <button class="showbtns magnet-target">add new listing</button>
         </form> -->
-        <br><br>
-
+    
+        <br>
+        <p id="errp">You searched for <b>
+                <%=qr%>
+            </b></p>
         <div class="row row-cols-lg-3 row row-cols-md-3 row row-cols-sm-2">
-            <%if(allListings != []){%>
-                <% for( listing of allListings){ %>
-                <a href="/listings/<%=listing._id%>">
+
+            <% if(flisting){%>
+                <a href="/listings/<%=flisting._id%>">
                     <div class="card col">
-                        <img src="<%=listing.image.url%>" class="card-img-top" style="height: 20rem;" alt="image">
+                        <img src="<%=flisting.image.url%>" class="card-img-top" style="height: 20rem;" alt="image">
                         <div class="card-img-overlay"></div>
 
                         <div class="card-body">
                             <p class="card-text">
                                 <b>
-                                    <%= listing.title %>.
+                                    <%= flisting.title %>.
                                 </b>
                             </p>
-                            <p class="card-text">₹ <%= listing.price.toLocaleString("en-IN")%>/night &nbsp&nbsp<i
+                            <p class="card-text">₹ <%= flisting.price.toLocaleString("en-IN")%>/night &nbsp&nbsp<i
                                         class="taxx">+18% GST</i></p>
                         </div>
                     </div>
                 </a>
-                <% } %> 
-            <%}else{%>
+
+
+          
+                <%}else{%>
                     <div id="err">
                         <img src="/gfs/opps.gif" alt="page not found!">
-                        <marquee
-                            style="width: 100%; font-weight: 100; margin-left: 60vw; background-color: #ffffff; color: #FF385C; padding: 10px 0;"
-                            scrollamount="20" direction="right">
+                        <marquee style="width: 100%; font-weight: 100; margin-left: 60vw; background-color: #ffffff; color: #FF385C; padding: 10px 0;" scrollamount="20" direction="right">
                             <h3 style="font-weight: 900;">No results found!</h3>
                         </marquee>
                     </div>
 
-                <%}%>
+                    <%}%>
         </div>
 
     </body>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const filters = document.querySelectorAll(".filter");
-
-            filters.forEach(filter => {
-                filter.addEventListener("click", function () {
-                    const filterValue = this.querySelector("p").textContent.trim().toLowerCase();
-                    changeUrl(`/searchlisting/listings/filters?filtername=${encodeURIComponent(filterValue)}`);
-                });
-            });
-
-            function changeUrl(url) {
-                window.location.href = url;
-            }
-        });
-
         let toggleBtn = document.getElementById("flexSwitchCheckDefault");
         toggleBtn.addEventListener("click", () => {
             const taxx = document.getElementsByClassName("taxx");

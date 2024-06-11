@@ -22,7 +22,7 @@
             <% if(ogurl !== listing.image.url){%>
                 <img src="<%= ogurl %>" alt="noimage">
             <%}%>
-            <img src="<%= ogurl %>" style="width: 300px; height: 200px;" alt="noimage">
+           
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Upload new image</label>
@@ -31,6 +31,26 @@
         <div class="mb-3">
             <label for="price" class="form-label">Price</label>
             <input type="number" class="form-control" required value="<%=listing.price%>"   name="listing[price]" id=""> 
+        </div>
+        <div class="mb-3">
+
+            <label for="category" class="form-label">Choose category</label>
+            <select class="form-control" name="listing[category]">
+                <option value="trending">Trending</option>
+                <option value="artic">Artic</option>
+                <option value="rooms">Rooms</option>
+                <option value="iconic-cities">iconic-cities</option>
+                <option value="castles">Castles</option>
+                <option value="pools">Pools</option>
+                <option value="camping">Camping</option>
+                <option value="farms">Farms</option>
+                <option value="rainy">Rainy</option>
+                <option value="tracking">Tracking</option>
+                <option value="bycycles">Bycycles</option>
+                <option value="trains">Trains</option>
+            </select>
+                <div class="invalid-feedback">category is required!</div>
+
         </div>
         <div class="mb-3">
             <label for="location" class="form-label">Location</label>

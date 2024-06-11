@@ -18,6 +18,7 @@ const flash = require("connect-flash");
 const listing = require("./routes/listings.js");
 const review = require("./routes/reviews.js");
 const userRouter = require("./routes/users.js");
+const searchRouter = require("./routes/search.js");
 const contactRouter = require("./routes/contact.js");
 
 const passport = require("passport");
@@ -107,10 +108,13 @@ app.use((req,res,next)=>{
   next();
 })
 
+
 app.use("/",userRouter);
 app.use("/listings", listing);
 app.use("/listings/:id/reviews", review);
 app.use("/contact",contactRouter);
+app.use("/searchlisting",searchRouter);
+
 
 app.post("/contact",(req,res)=>{
   const data = req.body.contact;

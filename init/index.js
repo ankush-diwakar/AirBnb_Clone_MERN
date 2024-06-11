@@ -34,7 +34,7 @@ const initialize = async () => {
           },
         };
       });
-      console.log(updateListingsWithImageInfo);
+    console.log(updateListingsWithImageInfo);
     await Listings.insertMany(updateListingsWithImageInfo);
     const d = await Listings.find({});
     console.log("The data was inserted into the database....", d)
