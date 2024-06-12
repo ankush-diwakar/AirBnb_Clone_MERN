@@ -4,12 +4,11 @@
 - [Project Description](#project-description)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
+- [Live website](#LiveWebsite)
 
 ## Project Description
 
@@ -19,6 +18,8 @@ This is a full-stack Airbnb-like web application where users can list, search, a
 
 - User Authentication (Sign up, Login, Logout)
 - Create, Read, Update, and Delete (CRUD) operations for listings
+- restfull APIs
+- **passport js** for authentication and authorization
 - Search and filter listings
 - Booking functionality
 - Review and rating system
@@ -31,15 +32,6 @@ This is a full-stack Airbnb-like web application where users can list, search, a
 - **Database:** MongoDB
 - **Authentication:** Passport.js
 - **Other Tools:** Mongoose, Nodemon, Body-parser
-
-## Installation
-
-To run this project locally, follow steps:
-
-**Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/airbnb-clone.git
-   cd airbnb-clone
 
 ## Usage
 
@@ -67,13 +59,33 @@ To run this project locally, follow steps:
 - **Add Review:** Add a review and rating for a listing.
 - **View Reviews:** Read reviews for a listing.
 
+
 ## Screenshots
+![Screenshot (92)](https://github.com/ankush-diwakar/AirBnb_Clone_MERN/assets/150348342/1eaf4996-6318-4657-a83e-1354339b0f60)
 
-![Home Page](screenshots/home.png)
-*Home Page*
+![Screenshot (93)](https://github.com/ankush-diwakar/AirBnb_Clone_MERN/assets/150348342/b959cfaf-8b8a-427d-9d25-723d65e8d017)
 
-![Listing Page](screenshots/listing.png)
-*Listing Page*
+![Screenshot (94)](https://github.com/ankush-diwakar/AirBnb_Clone_MERN/assets/150348342/41e4c0d6-176e-43df-9270-1c6a82d446e7)
 
-![Booking Page](screenshots/booking.png)
-*Booking Page*
+![Screenshot (94)](https://github.com/ankush-diwakar/AirBnb_Clone_MERN/assets/150348342/00408cac-d65d-42bf-9d20-2d65f76745e4)
+
+![Screenshot (95)](https://github.com/ankush-diwakar/AirBnb_Clone_MERN/assets/150348342/9a62270b-d518-4906-97c1-6b678f61eac9)
+
+![Screenshot (96)](https://github.com/ankush-diwakar/AirBnb_Clone_MERN/assets/150348342/d0b53398-f061-4dfe-8ab3-739b9c549d4d)
+
+![Screenshot (97)](https://github.com/ankush-diwakar/AirBnb_Clone_MERN/assets/150348342/f9de975c-1ec2-4fe4-89c3-3d87f7fc3b7b)
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+For any questions or suggestions, feel free to contact me at:
+
+Email: ankushdiwakar8080@gmail.com
+LinkedIn : https://www.linkedin.com/in/ankush-diwakar-024181284/ 
+
+## LiveWebsite
+https://airbnb-8297.onrender.com/
