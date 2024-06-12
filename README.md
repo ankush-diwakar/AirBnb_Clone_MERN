@@ -34,9 +34,27 @@ This is a full-stack Airbnb-like web application where users can list, search, a
 
 ## Installation
 
-To run this project locally, follow these steps:
+To run this project locally, follow steps:
 
-1. **Clone the repository:**
+**Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/airbnb-clone.git
    cd airbnb-clone
+
+User Authentication
+Sign Up: Create a new account.
+Login: Log in with your credentials.
+Logout: Log out from the application.
+Listings
+Create Listing: Add a new accommodation listing.
+View Listings: Browse all available listings.
+Update Listing: Edit your own listings.
+Delete Listing: Remove your own listings.
+Booking
+Search Listings: Search for listings based on location, date, and other filters.
+Book Listing: Book an available listing.
+View Bookings: See your booking history.
+Reviews
+Add Review: Add a review and rating for a listing.
+View Reviews: Read reviews for a listing.
+Screenshots
