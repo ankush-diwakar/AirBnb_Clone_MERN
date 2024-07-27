@@ -1,0 +1,182 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Prevent scrollbars */
+}
+
+/* home page  */
+.homecontainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    /* Higher z-index to appear above other content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    overflow: hidden !important;
+}
+
+.page1 {
+    text-align: center;
+    z-index: 1001;
+
+    /* height: 100%;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center; */
+}
+
+.page1 p:nth-child(1) {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    margin-bottom: -10px;
+    font-style: normal;
+}
+
+.page1 .detailp {
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: -5px;
+    font-style: normal;
+    margin-top: -40px;
+}
+
+.page1 .lower {}
+
+.page1 h1 {
+    font-family: "Anton", sans-serif;
+    /* font-family: Gilroy; */
+    font-weight: 400;
+    margin-top: -1px;
+    text-transform: uppercase;
+    font-size: 110px;
+}
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page2 img {
+    height: 100%;
+    padding: -5px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 80%;
+}
+
+
+.homecontainer .navvv .navbar {
+    height: 10vh;
+    background-color: white;
+    margin-bottom: 10px !important;
+}
+
+.homecontainer .navvv .navimg img {
+    height: 2.5vw;
+    margin-right: 2vw;
+}
+
+.homecontainer .navvv .nav-link {
+    color: black !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+/* map ki styling */
+#map {
+    width: 80vw;
+    height: 70vh;
+}
+
+#mainbbtn {
+    margin-top: 7vh;
+    z-index: 80;
+}
+
+#mainbbtn a {
+    text-decoration: none;
+    font-family: gilroy;
+    font-size: larger;
+    text-transform: uppercase;
+    color: white;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background-color: #ffffff81;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+/* 1 */
+.btn-1 {
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    color: white;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+}
+
+/* 15 */
+.btn-15 {
+    background: #000;
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #e0e5ec;
+    transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+    color: #000;
+}
+
+.btn-15:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-15:active {
+    top: 2px;
+}

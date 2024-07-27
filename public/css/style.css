@@ -1,18 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
 * {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 500;
 }
 
+/* scrollbar style */
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 12px;
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Thumb of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 6px;
+}
+
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: #878080;
+}
+
+
 /* 
 styling for login page */
-.log{
- padding-top: 20vh;
- padding-bottom: 10vh;
+.log {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
 }
-.login-con{
+
+.login-con {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 /* styling for the show.ejs file */
@@ -30,8 +58,8 @@ styling for login page */
     width: 70vw;
     /* height: 60vh; */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 
 }
 
@@ -66,7 +94,7 @@ styling for login page */
     border: none;
     text-transform: uppercase;
     color: white;
-    background-color:#212529;
+    background-color: #212529;
     letter-spacing: 1px;
     margin-top: 20px;
 }
@@ -109,26 +137,28 @@ styling for login page */
     font-size: 1.4rem !important;
     /* font-weight: 500 !important; */
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #FF385C !important;
 }
 
 /* search-styling */
-.search-container{
+.search-container {
     display: flex;
 }
 
-.collacontainer-fluid{
+.collacontainer-fluid {
     display: flex !important;
     justify-content: space-between !important;
 }
 
-#insearch{
+#insearch {
     border-radius: 30px;
     font-size: 0.9vw;
     padding: 5px 0.8vw 5px 0.8vw;
 }
-#inbtn{
+
+#inbtn {
 
     border-radius: 25px;
     background-color: #FF385C;
@@ -137,9 +167,10 @@ styling for login page */
     margin-left: 0.5vw;
     border: 0.5px solid white;
     align-self: center;
-    
+
 }
-#inbtn:hover{
+
+#inbtn:hover {
     border-radius: 25px;
     background-color: #FF385C;
     color: rgb(255, 255, 255);
@@ -147,11 +178,12 @@ styling for login page */
     margin-left: 0.5vw;
     border: 0.5px solid white;
     opacity: 0.9;
-    
+
 }
-#inbtn i{
+
+#inbtn i {
     display: inline;
- font-size: 0.9vw;
+    font-size: 0.9vw;
 }
 
 /* footer styling */
@@ -245,10 +277,13 @@ styling for login page */
 
 body {}
 
+
 /* home page  */
 .homecontainer {
     width: 100%;
     height: 90vh;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
     background-color: rgba(0, 0, 0, 0) !important;
     overflow: hidden !important;
 }
@@ -302,7 +337,7 @@ body {}
 }
 
 .page2 img {
-    height: 100%;
+    height: 100vh;
     padding: -5px;
     object-fit: cover;
     overflow: hidden;
@@ -333,11 +368,12 @@ body {}
     height: 70vh;
 }
 
-#mainbbtn{
+#mainbbtn {
     margin-top: 7vh;
     z-index: 80;
 }
-#mainbbtn a{
+
+#mainbbtn a {
     text-decoration: none;
     font-family: gilroy;
     font-size: larger;
@@ -352,50 +388,55 @@ body {}
     border: 2px solid #000;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-   background-color: #ffffff81;
+    background-color: #ffffff81;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-  }
+}
 
-  /* 1 */
+/* 1 */
 .btn-1 {
     transition: all 0.3s ease;
-  }
-  .btn-1:hover {
-    color: white;
-     box-shadow:
-     -7px -7px 20px 0px #fff9,
-     -4px -4px 5px 0px #fff9,
-     7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001;
-  }
+}
 
-  /* 15 */
+.btn-1:hover {
+    color: white;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+}
+
+/* 15 */
 .btn-15 {
     background: #000;
-   color: #fff;
-   z-index: 1;
- }
- .btn-15:after {
-   position: absolute;
-   content: "";
-   width: 0;
-   height: 100%;
-   top: 0;
-   right: 0;
-   z-index: -1;
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
     background: #e0e5ec;
-   transition: all 0.3s ease;
- }
- .btn-15:hover {
-   color: #000;
- }
- .btn-15:hover:after {
-   left: 0;
-   width: 100%;
- }
- .btn-15:active {
-   top: 2px;
- }
+    transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+    color: #000;
+}
+
+.btn-15:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-15:active {
+    top: 2px;
+}

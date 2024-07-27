@@ -11,54 +11,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300..700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css" />
+  <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+  <link rel="stylesheet" href="/css/style5.css">
 
 </head>
 
 <body>
   <div class="homecontainer">
-    <!-- <div class="navvv">
-      <nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav" style="display: flex; justify-content: space-evenly; padding-top: 1vh;">
-              <div class="navimg">
-                <img
-                  src="data:image/png;base64,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"
-                  alt="navbar">
-              </div>
-              <a style="text-decoration: none;" class="nav-link" href="/">Home</a>
-              <a style="text-decoration: none;" class="nav-link" href="/listings">Listings</a>
-              <a style="text-decoration: none;" class="nav-link" href="/listings/new">Add new listing</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div> -->
-    <div class="page1">
 
-      <p>GUIDED GROUP TRAVEL</p>
-      <h1>Find your tour</h1>
-      <p class="detailp">
-        Have a dream destination in mind? Whether you want to follow your
-        appetite </p>
-
-      <p class="detailp lower">to Tuscany or go wild in America’s greatest national parks,
-        our guided tour packages will get you there.</p>
-
-        <button id="mainbbtn" class="custom-btn btn-1"><a href="/listings"> explore</a></button>
+    <div class="content">
+      <h1>Discover Your Perfect Stay Anywhere, Anytime</h1>
+      <p>Find your perfect hotel and enjoy exceptional stays worldwide with just a click.</p>
+      <button id="mainbbtn" class="button-28"><a class="anc" href="/listings"> explore</a></button>
     </div>
-    <div class="page2">
-      <img
-        src="https://images.pexels.com/photos/25533704/pexels-photo-25533704/free-photo-of-travel-photography.jpeg"
-        alt="">
 
-      <img
-        src="https://images.pexels.com/photos/1632039/pexels-photo-1632039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="">
-      <!-- <img
-        src="https://www.pexels.com/photo/gray-train-at-the-train-station-12906272/"
-        alt=""> -->
+    <div class="page2">
+      <img src="/img/iothree.jpg" alt="imageOne">
+      <img src="/img/ioone.jpeg" alt="imageOne">
+      <img src="/img/iotwo.jpg" alt="imageOne">
+      <img src="/img/iofour.jpg" alt="imageOne">
     </div>
 
   </div>
